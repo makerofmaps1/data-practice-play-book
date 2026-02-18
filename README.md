@@ -1,6 +1,6 @@
-# My Python Portfolio
+# Data Practice Play Book
 
-A hands-on Python practice repository organized by topic.  
+A hands-on Python learning repository organized by topic.  
 Each folder contains runnable, script-based examples demonstrating practical data engineering.
 
 ## What this project is
@@ -12,7 +12,7 @@ Each folder contains runnable, script-based examples demonstrating practical dat
 ## Repository structure
 
 ```
-my-python-portfolio/
+data-practice-play-book/
 ├── 01_core_python/
 ├── 02_pandas/
 ├── 03_databases/

@@ -1,6 +1,6 @@
 """
 Python Functions and Closures Demonstration
-Author: Python Skills Portfolio
+Author: Data Practice Play Book
 Date: February 2026
 
 This script demonstrates Python functions and closures:

@@ -1,6 +1,6 @@
 """
 Advanced Python Functions Demonstration
-Author: Python Skills Portfolio
+Author: Data Practice Play Book
 Date: February 2026
 
 This script demonstrates advanced function concepts:

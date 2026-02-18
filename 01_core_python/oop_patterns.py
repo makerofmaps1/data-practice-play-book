@@ -1,6 +1,6 @@
 """
 Object-Oriented Programming Patterns Demonstration
-Author: Python Skills Portfolio
+Author: Data Practice Play Book
 Date: February 2026
 
 This script demonstrates OOP concepts and design patterns:

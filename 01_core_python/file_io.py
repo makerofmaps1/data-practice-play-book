@@ -1,6 +1,6 @@
 """
 File I/O Operations Demonstration
-Author: Python Skills Portfolio
+Author: Data Practice Play Book
 Date: February 2026
 
 This script demonstrates file I/O operations:
@@ -160,7 +160,7 @@ json_file = os.path.join(data_dir, "data.json")
 
 # Creating data structures for JSON
 data = {
-    "project": "Python Skills",
+    "project": "Data Practice Play Book",
     "version": "1.0",
     "author": "Developer",
     "modules": [
