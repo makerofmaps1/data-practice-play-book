@@ -1,4 +1,4 @@
-# Python Skill Demo
+# My Python Portfolio
 
 A hands-on Python practice repository organized by topic.  
 Each folder contains runnable, script-based examples demonstrating practical data engineering.
@@ -12,7 +12,7 @@ Each folder contains runnable, script-based examples demonstrating practical dat
 ## Repository structure
 
 ```
-python-skill-demo/
+my-python-portfolio/
 ├── 01_core_python/
 ├── 02_pandas/
 ├── 03_databases/
