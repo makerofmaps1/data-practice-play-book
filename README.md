@@ -44,9 +44,9 @@ Data workflows using pandas (plus introductory GeoPandas):
 Database skills in Python:
 
 - SQL fundamentals in Python
-- Connections and pooling patterns
+- Shared `.env` config pattern for Postgres/MySQL/Snowflake credentials
 - Bulk SQL operations
-- SQLAlchemy ORM folder scaffold
+- SQLAlchemy ORM basics (`sqlalchemy_basic.py`)
 
 ### 04_apis
 Planned API-focused examples (currently a placeholder).
@@ -67,33 +67,50 @@ Staged unit testing track for learning and teaching:
 
 ### 1) Create and activate a virtual environment
 
+Recommended Python version: **3.12**
+
 Windows (PowerShell):
 
 ```powershell
-python -m venv .venv
+# Create with Python 3.12
+py -3.12 -m venv .venv
+
+# Activate
 .\.venv\Scripts\Activate.ps1
 ```
 
 macOS/Linux:
 
 ```bash
-python -m venv .venv
+# Create with Python 3.12
+python3.12 -m venv .venv
+
+# Activate
 source .venv/bin/activate
 ```
 
 ### 2) Install dependencies
 
-Minimum useful set for most examples:
-
 ```bash
-pip install numpy scipy pandas
+python -m pip install --upgrade pip
+pip install -r requirements.txt
 ```
 
-Optional (used by specific scripts):
+### 3) Optional extras
+
+If you want to run every script (including heavier geo dependencies), install extras as needed:
 
 ```bash
-pip install geopandas shapely openpyxl pyarrow psycopg2-binary
+pip install geopandas shapely
 ```
+
+### 4) Database env setup (for external DB scripts)
+
+```bash
+copy 03_databases\.env.example 03_databases\.env
+```
+
+Then fill values in `03_databases/.env` for the database engines you want to run.
 
 ## Running examples
 
@@ -115,8 +132,11 @@ python 02_pandas/geopandas_basic.py
 python 02_pandas/pipeline_example.py
 
 python 03_databases/sql_in_python_basic.py
-python 03_databases/connections_and_pools.py
-python 03_databases/sql_bulk_operations.py
+python 03_databases/sqlalchemy_basic.py
+python 03_databases/01_sqlite.py
+python 03_databases/02_postgres.py
+python 03_databases/03_mysql.py
+python 03_databases/04_snowflake.py
 ```
 
 ## Suggested learning path
@@ -138,6 +158,5 @@ python 03_databases/sql_bulk_operations.py
 
 Potential next additions:
 
-- Shared `requirements.txt` or per-track requirement files
 - Unit tests for core examples
 - A small capstone project combining pandas + SQL + API ingestion + ETL orchestration

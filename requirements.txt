@@ -1,0 +1,15 @@
+numpy
+scipy
+pandas
+openpyxl
+pyarrow
+
+# Database connectors / ORM
+psycopg2-binary
+mysql-connector-python
+sqlalchemy
+snowflake-connector-python[pandas]
+snowpark
+
+# Testing
+pytest
